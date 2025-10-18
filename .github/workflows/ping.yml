@@ -3,7 +3,7 @@ name: Keep Render Awake
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/3 * * * *'  # каждые 5 минут
+    - cron: '*/5 * * * *'  # каждые 5 минут
 
 jobs:
   ping:
