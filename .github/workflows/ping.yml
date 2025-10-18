@@ -1,0 +1,13 @@
+name: Keep Render Awake
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/3 * * * *'  # каждые 5 минут
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl your site
+        run: curl -s https://basement.robornd.ru > /dev/null
