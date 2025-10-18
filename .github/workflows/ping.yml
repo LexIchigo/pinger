@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Curl your site
-        run: curl -s https://basement.robornd.ru > /dev/null
+        run: curl -s https://basement.robornd.ru/ping/git-actions > /dev/null
